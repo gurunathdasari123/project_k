@@ -1,0 +1,18 @@
+<h1>Transaction History </h1>
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">item</th>
+        <th scope="col">phoneNumber</th>
+        <th scope="col">amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of syeraa;let i=index">
+        <td>{{i}}</td>
+        <td>{{c.item}}</td>
+        <td>{{c.phoneNumber}}</td>
+        <td>{{c.amount}}</td>
+        
+      </tr>

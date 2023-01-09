@@ -1,0 +1,20 @@
+<form class="col-md-6 offset-md-3" [formGroup]="transaction" (ngSubmit)="onPay()">
+    <div>
+        <h1>Transaction Project-K</h1>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Item</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter item" formControlName="item" [(ngModel)]="item">
+      </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">PhoneNumber</label>
+        <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="phoneNumber"formControlName="phoneNumber" [(ngModel)]="phoneNumber">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">amount</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="enter amount" formControlName="amount" [(ngModel)]="amount">
+      </div>
+      <small>{{error}}</small><br>
+      <button type="submit" class="btn btn-danger">pay</button><br>
+      
+</form>
